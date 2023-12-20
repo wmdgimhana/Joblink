@@ -1,0 +1,43 @@
+.cardSlider .slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.cardSlider .slick-slide {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.cardSlider .slick-list {
+  overflow: hidden;
+  padding: 50px;
+  padding-top: 0;
+}
+
+.cardSlider .slick-dots {
+  bottom: 0;
+}
+
+/* ... Your existing styles ... */
+
+/* Remove background color from all dots and set a border */
+.cardSlider .slick-dots li {
+  background-color: transparent;
+  border: 1px solid #000000; /* Set the border style */
+  border-radius: 50%; /* Make the dot circular */
+  width: 10px;
+  height: 10px;
+}
+
+/* Set a white background for the active dot */
+.cardSlider .slick-dots li.slick-active {
+  background-color: #000000; /* Set the background color of the active dot */
+}
+
+/* ... Your existing styles ... */
+.cardSlider .slick-dots li button:before {
+  content: none; /* Remove the content of the before pseudo-element */
+}
